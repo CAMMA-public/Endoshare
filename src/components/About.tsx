@@ -4,7 +4,7 @@ import { Shield, Code, Users, Zap, Heart, Globe } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { label: "Privacy First", value: "HIPAA Compliant", icon: <Shield className="h-5 w-5" /> },
+    { label: "Privacy First", value: "Healthcare-Grade", icon: <Shield className="h-5 w-5" /> },
     { label: "Open Source", value: "MIT License", icon: <Code className="h-5 w-5" /> },
     { label: "Cross Platform", value: "Win/Mac/Linux", icon: <Globe className="h-5 w-5" /> },
     { label: "Medical Focus", value: "Built for Surgeons", icon: <Heart className="h-5 w-5" /> }
@@ -100,7 +100,7 @@ const About = () => {
                   <div className="mx-auto mb-3 rounded-full bg-success/10 w-12 h-12 flex items-center justify-center text-success">
                     <Shield className="h-6 w-6" />
                   </div>
-                  <h4 className="font-semibold mb-2">HIPAA Compliant</h4>
+                  <h4 className="font-semibold mb-2">Built for Sensitive Data Security</h4>
                   <p className="text-sm text-muted-foreground">
                     Meets all healthcare privacy and security requirements
                   </p>

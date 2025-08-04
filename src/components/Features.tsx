@@ -36,7 +36,7 @@ const Features = () => {
     },
     {
       icon: <CheckCircle className="h-6 w-6" />,
-      title: "HIPAA Compliance",
+      title: "Built for Sensitive Data Security",
       description: "Built-in safeguards ensure all processed videos meet healthcare privacy and security standards."
     },
     {

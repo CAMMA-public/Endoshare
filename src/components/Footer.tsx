@@ -77,11 +77,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  HIPAA Compliance
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
                   Support
                 </a>
               </li>
