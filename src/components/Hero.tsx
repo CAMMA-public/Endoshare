@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 flex justify-center">
             <img 
-              src="/logo.png" 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
               alt="EndoShare Logo" 
               className="h-24 w-24 md:h-32 md:w-32"
             />
