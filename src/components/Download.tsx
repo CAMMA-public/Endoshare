@@ -17,7 +17,7 @@ const DownloadSection = () => {
       name: "macOS",
       icon: <Apple className="h-8 w-8" />,
       description: "Compatible with macOS 10.15 and later",
-      downloadLink: "#",
+      downloadLink: "https://seafile.unistra.fr/f/6e054203416e414fac85/?dl=1",
       version: "v1.0.0",
       size: "52 MB"
     },
