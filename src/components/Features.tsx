@@ -17,12 +17,12 @@ const Features = () => {
     {
       icon: <Video className="h-6 w-6" />,
       title: "Video Merging",
-      description: "Seamlessly combine multiple surgical video files into a single, coherent recording for comprehensive documentation."
+      description: "Seamlessly combine multiple endoscopic video files into a single, coherent recording for comprehensive documentation."
     },
     {
       icon: <Scissors className="h-6 w-6" />,
       title: "Scene Detection",
-      description: "Automatically identify and remove out-of-body scenes to maintain focus on surgical procedures."
+      description: "Automatically identify and remove out-of-body scenes to maintain focus on endoscopic procedures."
     },
     {
       icon: <Shield className="h-6 w-6" />,
@@ -42,7 +42,7 @@ const Features = () => {
     {
       icon: <Users className="h-6 w-6" />,
       title: "Secure Sharing",
-      description: "Enable safe distribution of surgical content for education, training, and medical collaboration."
+      description: "Enable safe distribution of endoscopic content for education, training, and medical collaboration."
     },
     {
       icon: <Zap className="h-6 w-6" />,
@@ -69,7 +69,7 @@ const Features = () => {
             Powerful Features for Medical Professionals
           </h2>
           <p className="text-lg text-muted-foreground">
-            EndoShare provides comprehensive tools for processing surgical videos 
+            EndoShare provides comprehensive tools for processing endoscopic videos
             while maintaining the highest standards of patient privacy and data security.
           </p>
         </div>

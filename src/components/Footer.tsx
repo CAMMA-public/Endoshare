@@ -15,7 +15,7 @@ const Footer = () => {
               <h3 className="text-lg font-bold">EndoShare</h3>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Enhancing the sharing of surgical videos in a compliant manner. 
+              Enhancing the sharing of endoscopic videos in a compliant manner. 
               Built for medical professionals who prioritize patient privacy and data security.
             </p>
             <div className="flex space-x-4">
