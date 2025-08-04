@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center space-x-3">
           <img 
-            src="/uploads/logo.png" 
+            src="/logo.png" 
             alt="EndoShare Logo" 
             className="h-8 w-8"
           />
