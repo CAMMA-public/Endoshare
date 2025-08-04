@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/b292868a-9131-4ba3-98b3-95bccc05add9.png" 
+                src="/logo.png" 
                 alt="EndoShare Logo" 
                 className="h-8 w-8"
               />
