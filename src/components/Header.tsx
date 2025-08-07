@@ -8,10 +8,10 @@ const Header = () => {
         <div className="flex items-center space-x-3">
           <img 
             src={`${import.meta.env.BASE_URL}logo.png`} 
-            alt="EndoShare Logo" 
+            alt="Endoshare Logo" 
             className="h-8 w-8"
           />
-          <h1 className="text-xl font-bold">EndoShare</h1>
+          <h1 className="text-xl font-bold">Endoshare</h1>
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">

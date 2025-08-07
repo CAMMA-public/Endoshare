@@ -54,7 +54,7 @@ const Features = () => {
             Powerful Features for Medical Professionals
           </h2>
           <p className="text-lg text-muted-foreground">
-            EndoShare provides comprehensive tools for processing endoscopic videos.
+            Endoshare provides comprehensive tools for processing endoscopic videos.
           </p>
         </div>
 

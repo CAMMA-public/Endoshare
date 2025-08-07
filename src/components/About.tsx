@@ -16,7 +16,7 @@ const About = () => {
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              About EndoShare
+              About Endoshare
             </h2>
             <p className="text-lg text-muted-foreground">
               Improving endoscopic video sharing though free and open source software
@@ -50,7 +50,7 @@ const About = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  EndoShare was created to address the critical need for easy sharing 
+                  Endoshare was created to address the critical need for easy sharing 
                   of endoscopic videos in clinical education and collaboration. Our solution ensures 
                   that sensitive patient information is protected while enabling valuable knowledge transfer.
                 </p>

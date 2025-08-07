@@ -36,7 +36,7 @@ const DownloadSection = () => {
       <div className="container px-4">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            Download EndoShare
+            Download Endoshare
           </h2>
           <p className="text-lg text-muted-foreground">
             Get the latest version for your operating system. All builds are fully compiled 
@@ -78,7 +78,7 @@ const DownloadSection = () => {
               </div>
               <CardTitle className="text-xl">Open Source</CardTitle>
               <CardDescription>
-                EndoShare is fully open source. View the code, contribute, or build from source.
+                Endoshare is fully open source. View the code, contribute, or build from source.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">

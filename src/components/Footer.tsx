@@ -9,13 +9,13 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src={`${import.meta.env.BASE_URL}logo.png`} 
-                alt="EndoShare Logo" 
+                alt="Endoshare Logo" 
                 className="h-8 w-8"
               />
-              <h3 className="text-lg font-bold">EndoShare</h3>
+              <h3 className="text-lg font-bold">Endoshare</h3>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Enhancing the sharing of endoscopic videos in a compliant manner. 
+              Enhancing the sharing of endoscopic videos. 
               Built for medical professionals who prioritize patient privacy and data security.
             </p>
             <div className="flex space-x-4">
@@ -86,7 +86,7 @@ const Footer = () => {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 EndoShare. Open source under MIT License.
+            © 2024 Endoshare. Open source under MIT License.
           </p>
         </div>
       </div>
