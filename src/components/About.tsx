@@ -19,7 +19,7 @@ const About = () => {
               About EndoShare
             </h2>
             <p className="text-lg text-muted-foreground">
-              Revolutionizing endoscopic video sharing through privacy-compliant technology
+              Improving endoscopic video sharing though free and open source software
             </p>
           </div>
 
@@ -50,8 +50,8 @@ const About = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  EndoShare was created to address the critical need for secure, compliant sharing 
-                  of endoscopic videos in medical education and collaboration. Our solution ensures 
+                  EndoShare was created to address the critical need for easy sharing 
+                  of endoscopic videos in clinical education and collaboration. Our solution ensures 
                   that sensitive patient information is protected while enabling valuable knowledge transfer.
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -86,46 +86,6 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
-
-          <Card className="card-medical mt-8">
-            <CardHeader className="text-center">
-              <CardTitle>Privacy & Compliance</CardTitle>
-              <CardDescription>
-                Your data security is our top priority
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="mx-auto mb-3 rounded-full bg-success/10 w-12 h-12 flex items-center justify-center text-success">
-                    <Shield className="h-6 w-6" />
-                  </div>
-                  <h4 className="font-semibold mb-2">Sensitive Data Security</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Meets all healthcare privacy and security requirements
-                  </p>
-                </div>
-                <div>
-                  <div className="mx-auto mb-3 rounded-full bg-primary/10 w-12 h-12 flex items-center justify-center text-primary">
-                    <Code className="h-6 w-6" />
-                  </div>
-                  <h4 className="font-semibold mb-2">Transparent</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Open source code allows for security auditing and verification
-                  </p>
-                </div>
-                <div>
-                  <div className="mx-auto mb-3 rounded-full bg-accent/10 w-12 h-12 flex items-center justify-center text-accent">
-                    <Users className="h-6 w-6" />
-                  </div>
-                  <h4 className="font-semibold mb-2">Community Driven</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Built by and for the medical community with continuous feedback
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

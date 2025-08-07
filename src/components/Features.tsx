@@ -20,14 +20,9 @@ const Features = () => {
       description: "Seamlessly combine multiple endoscopic video files into a single, coherent recording for comprehensive documentation."
     },
     {
-      icon: <Scissors className="h-6 w-6" />,
-      title: "Scene Detection",
-      description: "Automatically identify and remove out-of-body scenes to maintain focus on endoscopic procedures."
-    },
-    {
       icon: <Shield className="h-6 w-6" />,
-      title: "De-identification",
-      description: "Remove all patient identifiable information to ensure compliance with medical privacy regulations."
+      title: "Scene Detection and De-identification",
+      description: "Automatically identify and blur out-of-body scenes to maintain focus on endoscopic procedures."
     },
     {
       icon: <Lock className="h-6 w-6" />,
@@ -35,19 +30,9 @@ const Features = () => {
       description: "Replace sensitive data with pseudonyms while maintaining referential integrity for research purposes."
     },
     {
-      icon: <CheckCircle className="h-6 w-6" />,
-      title: "Built for Sensitive Data Security",
-      description: "Built-in safeguards ensure all processed videos meet healthcare privacy and security standards."
-    },
-    {
       icon: <Users className="h-6 w-6" />,
-      title: "Secure Sharing",
-      description: "Enable safe distribution of endoscopic content for education, training, and medical collaboration."
-    },
-    {
-      icon: <Zap className="h-6 w-6" />,
-      title: "High Performance",
-      description: "Optimized processing algorithms deliver fast results without compromising video quality."
+      title: "Enhanced Sharing",
+      description: "Enable distribution of endoscopic content for education, training, and clinical collaboration."
     },
     {
       icon: <Eye className="h-6 w-6" />,
@@ -69,8 +54,7 @@ const Features = () => {
             Powerful Features for Medical Professionals
           </h2>
           <p className="text-lg text-muted-foreground">
-            EndoShare provides comprehensive tools for processing endoscopic videos
-            while maintaining the highest standards of patient privacy and data security.
+            EndoShare provides comprehensive tools for processing endoscopic videos.
           </p>
         </div>
 

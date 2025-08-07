@@ -88,9 +88,6 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © 2024 EndoShare. Open source under MIT License.
           </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1 mt-4 md:mt-0">
-            Made with <Heart className="h-4 w-4 text-red-500" /> for the medical community
-          </p>
         </div>
       </div>
     </footer>

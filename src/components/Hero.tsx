@@ -21,13 +21,13 @@ const Hero = () => {
           </h1>
           
           <p className="mb-4 text-xl text-muted-foreground md:text-2xl">
-            Endoscopic Video De-Identification and Pseudonymization
+            Endoscopic Video Pre-processing and De-Identification
           </p>
           
           <p className="mb-12 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Merge, de-identify, and pseudonymize endoscopic videos with confidence. 
+            Merge and de-identify endoscopic videos with confidence. 
             EndoShare removes out-of-body scenes and file metadata to improve sharing 
-            for medical education and collaboration.
+            for clinical education and collaboration.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -54,7 +54,7 @@ const Hero = () => {
               </div>
               <h3 className="mb-2 text-lg font-semibold">Video Processing</h3>
               <p className="text-muted-foreground">
-                Merge multiple endoscopic videos and remove out-of-body scenes automatically
+                Merge multiple endoscopic videos and standardize formats
               </p>
             </div>
             
@@ -62,9 +62,9 @@ const Hero = () => {
               <div className="mb-4 rounded-full bg-accent/10 p-4">
                 <Shield className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="mb-2 text-lg font-semibold">De-identification and Pseudonymization</h3>
+              <h3 className="mb-2 text-lg font-semibold">De-identification</h3>
               <p className="text-muted-foreground">
-                De-identify and pseudonymize content to meet medical privacy standards
+                De-identify content to meet medical privacy standards
               </p>
             </div>
             
@@ -74,7 +74,7 @@ const Hero = () => {
               </div>
               <h3 className="mb-2 text-lg font-semibold">Enhanced Sharing</h3>
               <p className="text-muted-foreground">
-                Enable safe collaboration and education in the medical community
+                Enable collaboration and education in the clinical community
               </p>
             </div>
           </div>
