@@ -1,4 +1,4 @@
-import { Github, ExternalLink, Heart } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -15,8 +15,12 @@ const Footer = () => {
               <h3 className="text-lg font-bold">Endoshare</h3>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Enhancing the sharing of endoscopic videos. 
-              Built for medical professionals who prioritize patient privacy and data security.
+              A free and open-source platform for sharing and preparing endoscopic videos. 
+              Intended for educational and research use, with privacy-preserving features.
+            </p>
+            <p className="text-muted-foreground mb-4 max-w-md">
+              <strong>Disclaimer:</strong> Endoshare is research and educational software. 
+              It is not a medical device and is not certified for clinical or diagnostic use.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -37,7 +41,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">Project</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a href="#features" className="hover:text-primary transition-colors">
@@ -86,7 +90,8 @@ const Footer = () => {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Endoshare. Open source under MIT License.
+            © 2024 Endoshare. Open source under MIT License.  
+            Not a medical device. For educational and research use only.
           </p>
         </div>
       </div>

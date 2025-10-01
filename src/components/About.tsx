@@ -4,10 +4,10 @@ import { Shield, Code, Users, Zap, Heart, Globe } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { label: "Privacy First", value: "Healthcare-Grade", icon: <Shield className="h-5 w-5" /> },
+    { label: "Privacy", value: "Data Protection", icon: <Shield className="h-5 w-5" /> },
     { label: "Open Source", value: "MIT License", icon: <Code className="h-5 w-5" /> },
     { label: "Cross Platform", value: "Win/Mac/Linux", icon: <Globe className="h-5 w-5" /> },
-    { label: "Medical Focus", value: "Built for Doctors", icon: <Heart className="h-5 w-5" /> }
+    { label: "Medical Focus", value: "Education & Research", icon: <Heart className="h-5 w-5" /> }
   ];
 
   return (
@@ -19,7 +19,7 @@ const About = () => {
               About Endoshare
             </h2>
             <p className="text-lg text-muted-foreground">
-              Improving endoscopic video sharing though free and open source software
+              A free and open-source platform for sharing endoscopic videos in educational, research, and collaborative contexts
             </p>
           </div>
 
@@ -42,17 +42,17 @@ const About = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Users className="h-5 w-5 text-primary" />
-                  For Medical Professionals
+                  For Medical Communities
                 </CardTitle>
                 <CardDescription>
-                  Designed specifically for the healthcare industry
+                  Developed to support teaching and collaboration
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Endoshare was created to address the critical need for easy sharing 
-                  of endoscopic videos in clinical education and collaboration. Our solution ensures 
-                  that sensitive patient information is protected while enabling valuable knowledge transfer.
+                  Endoshare is designed to make the exchange of endoscopic videos easier in education, 
+                  training, and research. It includes mechanisms to minimize exposure of sensitive information, 
+                  while enabling effective knowledge sharing.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Medical Education</Badge>
@@ -66,22 +66,22 @@ const About = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Zap className="h-5 w-5 text-accent" />
-                  Technical Excellence
+                  Technical Approach
                 </CardTitle>
                 <CardDescription>
-                  Built with modern technology and best practices
+                  Built with open methods and community review
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Our application leverages advanced video processing algorithms and robust 
-                  privacy protection mechanisms. The entire codebase is open source, 
-                  allowing for community contributions and transparent security auditing.
+                  The platform uses established video processing techniques and integrates 
+                  privacy-preserving features. The open-source codebase allows contributions, 
+                  peer review, and transparent evaluation.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Cross-Platform</Badge>
-                  <Badge variant="secondary">High Performance</Badge>
                   <Badge variant="secondary">Open Source</Badge>
+                  <Badge variant="secondary">Community-Driven</Badge>
                 </div>
               </CardContent>
             </Card>

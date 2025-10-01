@@ -2,12 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { 
   Video, 
   Shield, 
-  Scissors, 
-  Users, 
-  FileVideo, 
   Lock,
-  Zap,
-  CheckCircle,
+  Users, 
   Eye,
   Settings
 } from "lucide-react";
@@ -17,32 +13,32 @@ const Features = () => {
     {
       icon: <Video className="h-6 w-6" />,
       title: "Video Merging",
-      description: "Seamlessly combine multiple endoscopic video files into a single, coherent recording for comprehensive documentation."
+      description: "Combine multiple endoscopic video files into a single recording for documentation or review."
     },
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Scene Detection and De-identification",
-      description: "Automatically identify and blur out-of-body scenes to maintain focus on endoscopic procedures."
+      description: "Identify and blur out-of-body scenes to keep the focus on the surgical field."
     },
     {
       icon: <Lock className="h-6 w-6" />,
       title: "Pseudonymization",
-      description: "Replace sensitive data with pseudonyms while maintaining referential integrity for research purposes."
+      description: "Substitute sensitive identifiers with pseudonyms while keeping data consistent for research."
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Enhanced Sharing",
-      description: "Enable distribution of endoscopic content for education, training, and clinical collaboration."
+      title: "Sharing Support",
+      description: "Facilitate distribution of video material for education, training, or collaborative work."
     },
     {
       icon: <Eye className="h-6 w-6" />,
       title: "Quality Preservation",
-      description: "Maintain original video quality while applying necessary privacy and security transformations."
+      description: "Apply privacy and processing steps without altering the original visual quality of the videos."
     },
     {
       icon: <Settings className="h-6 w-6" />,
       title: "Customizable Settings",
-      description: "Fine-tune processing parameters to meet specific institutional requirements and workflows."
+      description: "Adjust processing parameters to align with local needs or institutional workflows."
     }
   ];
 
@@ -51,10 +47,10 @@ const Features = () => {
       <div className="container px-4">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            Powerful Features for Medical Professionals
+            Features
           </h2>
           <p className="text-lg text-muted-foreground">
-            Endoshare provides comprehensive tools for processing endoscopic videos.
+            Endoshare includes a range of tools for preparing and sharing endoscopic videos.
           </p>
         </div>
 

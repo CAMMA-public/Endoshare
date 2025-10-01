@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Github, Download } from "lucide-react";
+import { Github, Download, ExternalLink } from "lucide-react";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between px-4">
+      {/* Grid: [logo] [centered nav] [buttons] */}
+      <div className="container grid grid-cols-[auto_1fr_auto] items-center h-16 px-4">
+        {/* Left: Logo */}
         <div className="flex items-center space-x-3">
           <img 
             src={`${import.meta.env.BASE_URL}logo.png`} 
@@ -13,15 +15,21 @@ const Header = () => {
           />
           <h1 className="text-xl font-bold">Endoshare</h1>
         </div>
-        
-        <nav className="hidden md:flex items-center space-x-6">
+
+        {/* Center: Nav (truly centered, independent of side widths) */}
+        <nav className="hidden md:flex justify-self-center items-center gap-6 min-w-0">
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
             Features
           </a>
           <a href="#download" className="text-muted-foreground hover:text-foreground transition-colors">
             Download
           </a>
-          <a href="#github" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a
+            href="https://github.com/your-repo"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
           <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -29,11 +37,28 @@ const Header = () => {
           </a>
         </nav>
 
-        <div className="flex items-center space-x-3">
+        {/* Right: Buttons */}
+        <div className="flex items-center gap-3 justify-self-end">
           <Button variant="outline" size="sm" asChild>
-            <a href="#github" className="flex items-center gap-2">
+            <a
+              href="https://github.com/your-repo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
               <Github className="h-4 w-4" />
-              <span className="hidden sm:inline">Source</span>
+              <span className="hidden sm:inline">GitHub</span>
+            </a>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a
+              href="https://arxiv.org/abs/your-paper-id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="h-4 w-4" />
+              <span className="hidden sm:inline">Paper</span>
             </a>
           </Button>
           <Button size="sm" asChild>

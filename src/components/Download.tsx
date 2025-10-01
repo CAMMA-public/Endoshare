@@ -8,7 +8,7 @@ const DownloadSection = () => {
     {
       name: "Windows",
       icon: <Monitor className="h-8 w-8" />,
-      description: "Compatible with Windows 10 and later",
+      description: "Tested on Windows 10 and later",
       downloadLink: "#",
       version: "v1.0.0",
       size: "45 MB"
@@ -16,7 +16,7 @@ const DownloadSection = () => {
     {
       name: "macOS",
       icon: <Apple className="h-8 w-8" />,
-      description: "Compatible with macOS 10.15 and later",
+      description: "Tested on macOS 10.15 and later",
       downloadLink: "https://seafile.unistra.fr/f/6e054203416e414fac85/?dl=1",
       version: "v1.0.0",
       size: "473 MB"
@@ -24,7 +24,7 @@ const DownloadSection = () => {
     {
       name: "Linux",
       icon: <Smartphone className="h-8 w-8" />,
-      description: "Ubuntu 20.04+ and other distributions",
+      description: "Compatible with Ubuntu 20.04+ and other distributions",
       downloadLink: "#",
       version: "v1.0.0",
       size: "48 MB"
@@ -39,8 +39,7 @@ const DownloadSection = () => {
             Download Endoshare
           </h2>
           <p className="text-lg text-muted-foreground">
-            Get the latest version for your operating system. All builds are fully compiled 
-            and ready to use immediately.
+            Pre-built binaries for your operating system are available below.
           </p>
         </div>
 
@@ -78,7 +77,7 @@ const DownloadSection = () => {
               </div>
               <CardTitle className="text-xl">Open Source</CardTitle>
               <CardDescription>
-                Endoshare is fully open source. View the code, contribute, or build from source.
+                The full source code is available for review and contributions.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">
@@ -104,11 +103,13 @@ const DownloadSection = () => {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-2">
           <p className="text-sm text-muted-foreground">
-            All downloads are digitally signed and verified. 
-            <br />
-            System requirements and installation guides available in our documentation.
+            Installation instructions and system requirements are provided in the documentation.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            <strong>Disclaimer:</strong> Endoshare is open-source software intended for educational and research use only. 
+            It is not a medical device and is not certified for clinical or diagnostic use.
           </p>
         </div>
       </div>
