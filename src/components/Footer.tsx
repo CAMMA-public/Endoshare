@@ -1,4 +1,5 @@
 import { Github, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,13 +32,13 @@ const Footer = () => {
               >
                 <Github className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
+              <Link
+                to="/docs"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Documentation"
               >
                 <ExternalLink className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -47,8 +48,16 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
               <li><a href="#download" className="hover:text-primary transition-colors">Download</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">System Requirements</a></li>
+              <li>
+                <Link to="/docs" className="hover:text-primary transition-colors">
+                  Documentation
+                </Link>
+              </li>
+              <li>
+                <Link to={{ pathname: "/docs", hash: "#installation" }} className="hover:text-primary transition-colors">
+                  System Requirements
+                </Link>
+              </li>
             </ul>
           </div>
 
