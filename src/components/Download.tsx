@@ -75,14 +75,14 @@ const DownloadSection = () => {
               <div className="mx-auto mb-4 rounded-full bg-accent/10 p-4 text-accent">
                 <Github className="h-8 w-8" />
               </div>
-              <CardTitle className="text-xl">Open Source</CardTitle>
+              <CardTitle className="text-xl">Source Available</CardTitle>
               <CardDescription>
                 The full source code is available for review and contributions.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <div className="flex justify-center gap-2">
-                <Badge variant="secondary">MIT License</Badge>
+                <Badge variant="secondary">PolyForm Noncommercial License</Badge>
                 <Badge variant="outline">Active Development</Badge>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -108,7 +108,7 @@ const DownloadSection = () => {
             Installation instructions and system requirements are provided in the documentation.
           </p>
           <p className="text-sm text-muted-foreground">
-            <strong>Disclaimer:</strong> Endoshare is open-source software intended for educational and research use only. 
+            <strong>Disclaimer:</strong> Endoshare is source-available software intended for educational and research use only. 
             It is not a medical device and is not certified for clinical or diagnostic use.
           </p>
         </div>

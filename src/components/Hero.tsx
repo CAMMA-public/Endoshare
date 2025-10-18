@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           
           <p className="mb-4 text-xl text-muted-foreground md:text-2xl">
-            Endoscopic Video Processing and De-identification
+            Surgical Video Processing and De-identification
           </p>
           
           <p className="mb-12 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">

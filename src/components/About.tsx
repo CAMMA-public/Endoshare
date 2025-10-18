@@ -5,7 +5,7 @@ import { Shield, Code, Users, Zap, Heart, Globe } from "lucide-react";
 const About = () => {
   const stats = [
     { label: "Privacy", value: "Data Protection", icon: <Shield className="h-5 w-5" /> },
-    { label: "Open Source", value: "MIT License", icon: <Code className="h-5 w-5" /> },
+    { label: "Source Available", value: "PolyForm Noncommercial License", icon: <Code className="h-5 w-5" /> },
     { label: "Cross Platform", value: "Win/Mac/Linux", icon: <Globe className="h-5 w-5" /> },
     { label: "Medical Focus", value: "Education & Research", icon: <Heart className="h-5 w-5" /> }
   ];
@@ -19,7 +19,7 @@ const About = () => {
               About Endoshare
             </h2>
             <p className="text-lg text-muted-foreground">
-              A free and open-source platform for sharing endoscopic videos in educational, research, and collaborative contexts
+              A free and source-available platform for sharing endoscopic videos in educational, research, and collaborative contexts
             </p>
           </div>
 
@@ -75,12 +75,12 @@ const About = () => {
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
                   The platform uses established video processing techniques and integrates 
-                  privacy-preserving features. The open-source codebase allows contributions, 
+                  privacy-preserving features. The source-available codebase allows contributions, 
                   peer review, and transparent evaluation.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Cross-Platform</Badge>
-                  <Badge variant="secondary">Open Source</Badge>
+                  <Badge variant="secondary">Source Available</Badge>
                   <Badge variant="secondary">Community-Driven</Badge>
                 </div>
               </CardContent>
