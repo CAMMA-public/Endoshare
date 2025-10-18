@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Download, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -35,6 +36,9 @@ const Header = () => {
           <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
             About
           </a>
+          <Link to="/docs" className="text-muted-foreground hover:text-foreground transition-colors">
+            Documentation
+          </Link>
         </nav>
 
         {/* Right: Buttons */}

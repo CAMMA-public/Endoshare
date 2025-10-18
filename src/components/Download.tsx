@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, Monitor, Apple, Smartphone, Github, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const DownloadSection = () => {
   const platforms = [
@@ -93,10 +94,10 @@ const DownloadSection = () => {
                   </a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="#" className="flex items-center gap-2">
+                  <Link to="/docs" className="flex items-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     Documentation
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </CardContent>
