@@ -86,6 +86,16 @@ const Footer = () => {
                   Provide Feedback
                 </a>
               </li>
+                            <li>
+                <a 
+                  href="https://polyformproject.org/licenses/noncommercial/1.0.0/" 
+                  className="hover:text-primary transition-colors" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  License
+                </a>
+              </li>
             </ul>
           </div>
         </div>
