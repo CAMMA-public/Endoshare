@@ -8,19 +8,17 @@ import { Home, Download } from "lucide-react";
 const Documentation = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Header />
+      <Header minimal />
       <main className="container px-4 py-16 space-y-16">
         <section className="text-center max-w-4xl mx-auto space-y-6">
           <Badge variant="secondary" className="uppercase tracking-wider">
             Documentation
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gradient">
-            Endoshare Knowledge Base
+            Endoshare Documentation
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Learn how to configure, operate, and maintain Endoshare. This guide mirrors the
-            main site styling to keep the experience consistent while offering in-depth
-            workflow explanations, installation steps, and licensing details.
+            Learn how to configure, operate, and maintain Endoshare.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="outline" asChild>
@@ -42,8 +40,7 @@ const Documentation = () => {
             <Badge variant="outline">Using Endoshare</Badge>
             <h2 className="text-3xl font-semibold">Core Workflows and Features</h2>
             <p className="text-muted-foreground">
-              Endoshare merges, anonymizes, and prepares endoscopic videos while enforcing
-              privacy and compliance.
+              Endoshare merges and de-identifies endoscopic videos.
             </p>
           </div>
           <ol className="space-y-8 list-decimal pl-6">
@@ -213,8 +210,7 @@ const Documentation = () => {
                 <div className="rounded-xl border p-4 space-y-2">
                   <h4 className="font-semibold">Auditability</h4>
                   <p className="text-muted-foreground">
-                    All processing sessions and performance metrics are logged to the shared directory to satisfy
-                    compliance requirements.
+                    All processing sessions and performance metrics are logged to the shared directory.
                   </p>
                 </div>
               </div>
