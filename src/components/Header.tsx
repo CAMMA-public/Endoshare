@@ -40,7 +40,7 @@ const Header = ({ minimal = false }: HeaderProps) => {
             >
               GitHub
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </a>
             <Link to="/docs" className="text-muted-foreground hover:text-foreground transition-colors">
