@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Home, Download } from "lucide-react";
 
 const Documentation = () => {
@@ -27,10 +28,10 @@ const Documentation = () => {
               </Link>
             </Button>
             <Button asChild>
-              <a href="#installation" className="flex items-center gap-2">
+              <HashLink smooth to="#installation" className="flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 Jump to Installation
-              </a>
+              </HashLink>
             </Button>
           </div>
         </section>
