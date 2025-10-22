@@ -10,9 +10,9 @@ const DownloadSection = () => {
       name: "Windows",
       icon: <Monitor className="h-8 w-8" />,
       description: "Tested on Windows 10 and later",
-      downloadLink: "#",
+      downloadLink: "https://seafile.unistra.fr/f/626347ee28b64ea5b4c7/?dl=1",
       version: "v1.0.0",
-      size: "45 MB"
+      size: "477 MB"
     },
     {
       name: "macOS",
@@ -25,10 +25,8 @@ const DownloadSection = () => {
     {
       name: "Linux",
       icon: <Smartphone className="h-8 w-8" />,
-      description: "Compatible with Ubuntu 20.04+ and other distributions",
-      downloadLink: "#",
-      version: "v1.0.0",
-      size: "48 MB"
+      description: "Coming Soon",
+      downloadLink: "https://youtu.be/dQw4w9WgXcQ?si=Vau63eVAjTnD4zl8",
     }
   ];
 

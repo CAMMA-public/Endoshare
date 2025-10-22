@@ -40,7 +40,7 @@ const Hero = () => {
             </Button>
             
             <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-              <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://github.com/CAMMA-public/Endoshare_code" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Github className="h-5 w-5" />
                 View Source Code
               </a>

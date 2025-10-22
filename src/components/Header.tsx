@@ -33,7 +33,7 @@ const Header = ({ minimal = false }: HeaderProps) => {
               Download
             </a>
             <a
-              href="https://github.com/your-repo"
+              href="https://github.com/CAMMA-public/Endoshare_code"
               className="text-muted-foreground hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const Header = ({ minimal = false }: HeaderProps) => {
           <div className="flex items-center gap-3 justify-self-end">
             <Button variant="outline" size="sm" asChild>
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/CAMMA-public/Endoshare_code"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

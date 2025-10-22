@@ -1,5 +1,6 @@
 import { Github, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -26,14 +27,14 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://github.com/CAMMA-public/Endoshare_code" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub Repository"
               >
                 <Github className="h-5 w-5" />
               </a>
               <Link
-                to="/docs"
+                to="/docs#using-endoshare"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Documentation"
               >
@@ -46,17 +47,25 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Project</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#download" className="hover:text-primary transition-colors">Download</a></li>
               <li>
-                <Link to="/docs" className="hover:text-primary transition-colors">
+                <HashLink smooth to="/#features" className="hover:text-primary transition-colors">
+                  Features
+                </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/#download" className="hover:text-primary transition-colors">
+                  Download
+                </HashLink>
+              </li>
+              <li>
+                <Link to="/docs#using-endoshare" className="hover:text-primary transition-colors">
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link to={{ pathname: "/docs", hash: "#installation" }} className="hover:text-primary transition-colors">
-                  System Requirements
-                </Link>
+                <HashLink smooth to="/docs#installation" className="hover:text-primary transition-colors">
+                  Installation From Source
+                </HashLink>
               </li>
             </ul>
           </div>
@@ -65,7 +74,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
+              <li>
+                <HashLink smooth to="/#about" className="hover:text-primary transition-colors">
+                  About
+                </HashLink>
+              </li>
               <li>
                 <a 
                   href="http://camma.u-strasbg.fr/" 

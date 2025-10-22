@@ -230,30 +230,106 @@ const Documentation = () => {
               requirements below before cloning the repository.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-[1fr_minmax(0,1.2fr)]">
+
+          {/* Three-column responsive grid */}
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* MacOS Box */}
             <div className="rounded-xl bg-card border p-6 space-y-4">
-              <h3 className="text-xl font-semibold">Requirements</h3>
+              <h3 className="text-xl font-semibold">Requirements — macOS</h3>
               <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-                <li>Python ≥ 3.11</li>
-                <li>FFmpeg</li>
-                <li>OpenCV</li>
-                <li>TensorFlow</li>
-                <li>PyQt5</li>
-                <li>loguru</li>
-                <li>tqdm</li>
-                <li>psutil</li>
+                <li>certifi==2025.10.5</li>
+                <li>charset-normalizer==3.4.4</li>
+                <li>colorlog==6.10.1</li>
+                <li>contourpy==1.3.2</li>
+                <li>cycler==0.12.1</li>
+                <li>fonttools==4.60.1</li>
+                <li>idna==3.11</li>
+                <li>kiwisolver==1.4.9</li>
+                <li>loguru==0.7.3</li>
+                <li>matplotlib==3.10.7</li>
+                <li>numpy==2.2.6</li>
+                <li>opencv-python==4.12.0.88</li>
+                <li>packaging==25.0</li>
+                <li>Pillow==12.0.0</li>
+                <li>psutil==7.1.1</li>
+                <li>pyparsing==3.2.5</li>
+                <li>PyQt5==5.15.11</li>
+                <li>PyQt5-Qt5==5.15.17</li>
+                <li>PyQt5_sip==12.17.1</li>
+                <li>python-dateutil==2.9.0.post0</li>
+                <li>requests==2.32.5</li>
+                <li>six==1.17.0</li>
+                <li>tqdm==4.67.1</li>
+                <li>urllib3==2.5.0</li>
+                <li>vidgear==0.3.3</li>
               </ul>
             </div>
+
+            {/* Windows Box */}
+            <div className="rounded-xl bg-card border p-6 space-y-4">
+              <h3 className="text-xl font-semibold">Requirements — Windows</h3>
+              <p className="text-muted-foreground text-sm">Requires Python&nbsp;3.10 on Windows</p>
+              <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                <li>tensorflow-cpu==2.10.1</li>
+                <li>numpy&gt;=1.23,&lt;2.0</li>
+                <li>opencv-python&lt;4.9</li>
+                <li>PyQt5==5.15.11</li>
+                <li>vidgear==0.3.3</li>
+                <li>tqdm&gt;=4.66</li>
+                <li>requests&gt;=2.31</li>
+                <li>protobuf==3.19.6</li>
+                <li>tensorboard&lt;2.11</li>
+                <li>pillow&gt;=9.4</li>
+                <li>loguru&gt;=0.7</li>
+                <li>colorlog&gt;=6.8</li>
+                <li>matplotlib==3.10.7</li>
+                <li>psutil==7.1.1</li>
+              </ul>
+            </div>
+
+            {/* From Source Box */}
             <div className="rounded-xl bg-card border p-6 space-y-4">
               <h3 className="text-xl font-semibold">From Source</h3>
               <p className="text-muted-foreground">
-                Use the following commands to clone, install dependencies, and launch the application.
+                Follow these steps to clone the repository, install dependencies, download model weights, and
+                set up FFmpeg before launching Endoshare.
               </p>
               <pre className="bg-muted rounded-lg p-4 text-sm overflow-x-auto">
-                <code>{`git clone https://github.com/your-org/Endoshare.git
-cd Endoshare
-pip install -r requirements.txt
-python app.py`}</code>
+                <code>{`# 1. Clone the repository
+            git clone https://github.com/CAMMA-public/Endoshare_code.git
+            cd Endoshare
+
+            # 2. Install Python dependencies
+            pip install -r requirements.txt
+
+            # 3. Download model weights (OOBNet)
+            # Create the checkpoint directory and download weights into it
+            cd endoshare/resources
+            mkdir -p ckpt
+            cd ckpt
+            wget https://s3.unistra.fr/camma_public/github/oobnet_detection/ckpt/oobnet_weights.h5
+            cd ../../../
+
+            # 4. Install FFmpeg binaries
+            # The FFmpeg executable must be placed inside: endoshare/Externals/ffmpeg/
+
+            # ── macOS / Linux ────────────────────────────────
+            # Create the folder and download the static build
+            mkdir -p endoshare/Externals/ffmpeg
+            cd endoshare/Externals/ffmpeg
+            wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+            tar -xf ffmpeg-release-amd64-static.tar.xz
+            mv ffmpeg-*-static/ffmpeg .
+            cd ../../../..
+
+            # ── Windows ─────────────────────────────────────
+            # 1. Go to https://www.gyan.dev/ffmpeg/builds/
+            # 2. Download "ffmpeg-git-full.7z"
+            # 3. Extract it and copy the ffmpeg.exe binary into:
+            #      endoshare\\Externals\\ffmpeg\\ffmpeg.exe
+
+            # 5. Launch Endoshare
+            python main.py`}</code>
               </pre>
             </div>
           </div>
@@ -401,7 +477,7 @@ python app.py`}</code>
 
         <section className="rounded-2xl border bg-muted/30 p-8 space-y-4 text-center">
           <h2 className="text-2xl font-semibold">Important Disclaimer</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-muted-foreground max-w-4xl mx-auto">
             Endoshare is research and educational software. It is not a medical device and is not certified for clinical or
             diagnostic use. Manual review of outputs is recommended to ensure privacy assurance before sharing any content.
           </p>
