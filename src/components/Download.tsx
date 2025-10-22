@@ -18,7 +18,7 @@ const DownloadSection = () => {
       name: "macOS",
       icon: <Apple className="h-8 w-8" />,
       description: "Tested on macOS 10.15 and later",
-      downloadLink: "https://seafile.unistra.fr/f/6e054203416e414fac85/?dl=1",
+      downloadLink: "https://seafile.unistra.fr/f/39f25a094d81461692b3/?dl=1",
       version: "v1.0.0",
       size: "473 MB"
     },
@@ -26,7 +26,9 @@ const DownloadSection = () => {
       name: "Linux",
       icon: <Smartphone className="h-8 w-8" />,
       description: "Coming Soon",
-      downloadLink: "https://youtu.be/dQw4w9WgXcQ?si=Vau63eVAjTnD4zl8",
+      downloadLink: "https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1",
+      version: "na",
+      size: "na"
     }
   ];
 
