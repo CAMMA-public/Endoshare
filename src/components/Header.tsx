@@ -26,10 +26,10 @@ const Header = ({ minimal = false }: HeaderProps) => {
         {/* Center: Nav (truly centered, independent of side widths) */}
         {!minimal && (
           <nav className="hidden md:flex justify-self-center items-center gap-6 min-w-0">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            <a href="#download" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#download" className="text-muted-foreground hover:text-foreground transition-colors">
               Download
             </a>
             <a
@@ -75,7 +75,7 @@ const Header = ({ minimal = false }: HeaderProps) => {
               </a>
             </Button>
             <Button size="sm" asChild>
-              <a href="#download" className="flex items-center gap-2">
+              <a href="/#download" className="flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 <span className="hidden sm:inline">Download</span>
               </a>

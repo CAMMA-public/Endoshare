@@ -88,7 +88,7 @@ const DownloadSection = () => {
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button variant="outline" asChild>
-                  <a href="#" className="flex items-center gap-2">
+                  <a href="https://github.com/CAMMA-public/Endoshare_code" className="flex items-center gap-2">
                     <Github className="h-4 w-4" />
                     View on GitHub
                   </a>
