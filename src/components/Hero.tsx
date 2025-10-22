@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Video, Users, Download, Github, ArrowRight } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
@@ -32,11 +33,11 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button size="lg" className="w-full sm:w-auto" asChild>
-              <a href="/#download" className="flex items-center gap-2">
+              <HashLink smooth to="/#download" className="flex items-center gap-2">
                 <Download className="h-5 w-5" />
                 Download Endoshare
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </HashLink>
             </Button>
             
             <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>

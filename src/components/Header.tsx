@@ -2,36 +2,33 @@
 import { Button } from "@/components/ui/button";
 import { Github, Download, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-// NEW: add a prop type
-type HeaderProps = {
-  minimal?: boolean; // when true, hide nav + buttons
-};
+type HeaderProps = { minimal?: boolean };
 
 const Header = ({ minimal = false }: HeaderProps) => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Grid: [logo] [centered nav] [buttons] */}
       <div className="container grid grid-cols-[auto_1fr_auto] items-center h-16 px-4">
-        {/* Left: Logo */}
-        <div className="flex items-center space-x-3">
-          <img 
-            src={`${import.meta.env.BASE_URL}logo.png`} 
-            alt="Endoshare Logo" 
+        {/* Left: Logo → go home */}
+        <Link to="/" className="flex items-center space-x-3">
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Endoshare Logo"
             className="h-8 w-8"
           />
           <h1 className="text-xl font-bold">Endoshare</h1>
-        </div>
+        </Link>
 
-        {/* Center: Nav (truly centered, independent of side widths) */}
+        {/* Center: Nav */}
         {!minimal && (
           <nav className="hidden md:flex justify-self-center items-center gap-6 min-w-0">
-            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <HashLink smooth to="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
-            </a>
-            <a href="/#download" className="text-muted-foreground hover:text-foreground transition-colors">
+            </HashLink>
+            <HashLink smooth to="/#download" className="text-muted-foreground hover:text-foreground transition-colors">
               Download
-            </a>
+            </HashLink>
             <a
               href="https://github.com/CAMMA-public/Endoshare_code"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -40,9 +37,9 @@ const Header = ({ minimal = false }: HeaderProps) => {
             >
               GitHub
             </a>
-            <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <HashLink smooth to="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
-            </a>
+            </HashLink>
             <Link to="/docs" className="text-muted-foreground hover:text-foreground transition-colors">
               Documentation
             </Link>
@@ -75,10 +72,10 @@ const Header = ({ minimal = false }: HeaderProps) => {
               </a>
             </Button>
             <Button size="sm" asChild>
-              <a href="/#download" className="flex items-center gap-2">
+              <HashLink smooth to="/#download" className="flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 <span className="hidden sm:inline">Download</span>
-              </a>
+              </HashLink>
             </Button>
           </div>
         )}
